@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #00008b, #880000);
+    padding: 15px 40px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .top-nav-links a {
+    color: white;
+    text-decoration:none;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  
+  .top-nav-links a:hover {
+    color: blue;
+  }
+  
+  .admission-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .admission-info span {
+    color: white;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .erp-login {
+    padding: 5px 15px;
+    background-color: #D32F2F;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+  
+  .boss {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+  }
+  
+  .boss div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+  }
+  
+  
+  .bottom-nav {
+    background-color: #007BFF;
+    padding: 19px 30px;
+  }
+  
+  .bottom-nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bottom-nav ul li {
+    list-style: none;
+  }
+  
+  .bottom-nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .bottom-nav ul li a:hover {
+    background-color: #0056b3;
+  }
+  
+   .slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .slider {
+    display: flex;
+    width: 100%; 
+    animation: slide 25s infinite;
+  }
+  
+  .item-image {
+    min-width: 100%; 
+    transition: 0.5s;
+  }
+  
+  .item-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(-400%); }
+  }
+  
+  
+.section {
+    padding: 20px;
+    text-align: center;
+}
+.section.blue {
+    background: #4b6cb7;
+    color: white;
+}
+.section.red {
+    background: #d32f2f;
+    color: white;
+}
+.section img {
+    width: 100%;
+    height: auto;
+}
+.section .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.section .content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.section .content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.section .content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #d32f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.grid .card {
+    background: rgba(22, 22, 21, 0.377);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.grid .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.grid .card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.grid .card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.grid .card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4b6cb7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer a {
+    color: #4b6cb7;
+    text-decoration: none;
+}
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer .links div {
+    margin: 10px;
+}
+.footer .links div h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.footer .links div ul {
+    list-style: none;
+    padding: 0;
+}
+.footer .links div ul li {
+    margin: 5px 0;
+}
+.footer .links div ul li a {
+    color: white;
+    text-decoration: none;
+}
+.footer .links div ul li a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .grid .card {
+        width: calc(50% - 40px);
+    }
+}
+@media (max-width: 480px) {
+    .grid .card {
+        width: calc(100% - 40px);
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        width: 100%;
+        right: 0;
+    }
+}
